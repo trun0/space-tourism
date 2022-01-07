@@ -31,14 +31,14 @@ Users should be able to:
 
 ### Screenshot
 
-![Home](./screenshots/home.jpeg)
-![Destination](./screenshots/destination.jpeg)
+![Home](./screenshots/home.png)
+![Destination](./screenshots/destination.png)
 
 
 ### Links
 
 - Solution URL: [https://github.com/trun0/space-tourism](https://github.com/trun0/space-tourism)
-- Live Site URL: [https://space-tourism.netlify.app](https://space-tourism.netlify.app)
+- Live Site URL: [https://space-tourism-pro.netlify.app](https://space-tourism-pro.netlify.app)
 
 ## My process
 
