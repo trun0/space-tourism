@@ -1,0 +1,203 @@
+.destination {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  padding-bottom: 8%;
+  display:flex;
+  min-height: 900px;
+}
+
+.dest-left-part {
+  margin-left: calc(3.97% + 98px);
+}
+
+.destination-heading {
+  margin-top: 200px;
+}
+
+.destination .heading5 span {
+  word-spacing: 10px;
+}
+
+.heading5 span {
+  opacity: 0.25;
+}
+
+.dest-image {
+  margin-left: 15%;
+  margin-top: 100px;
+}
+
+.dest-link {
+  margin-bottom: 35px;
+}
+
+.dest-link-item {
+  text-decoration: none;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  margin-right: 7.5%;
+}
+
+.dest-link-item:hover {
+  color: #FFFFFF;
+}
+
+@media (hover: hover) {
+  .dest-link-item:hover {
+    color: #D0D6F9;
+    text-decoration: underline;
+    text-underline-offset: 14px;
+  }  
+}
+
+.dest-link-item-active {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 14px;
+}
+
+.hrule {
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin-top: 60px;
+  opacity: 0.25;
+}
+
+.destination-content { 
+  width: 31%;
+  margin-top: 310px;
+  margin-left: 15.5%;
+}
+
+.destination-content .subheading2 {
+  color: #D0D6F9;
+}
+
+.dspan {
+  margin-right: 20%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/******************* Media Queries ******************/
+
+
+/****************** Desktop *************************/
+@media screen and (max-width: 1250px) {
+  .dest-left-part {
+    margin-left: calc(7% + 20px);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .dest-image {
+    margin-left: 4%;
+    height: 400px;
+  }
+  .destination-content {
+    margin-left: 7%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .dest-image {
+    margin-left: 0;
+  }
+  .destination-content {
+    margin-left: 3%;
+  }
+}
+
+/******************* Tablet *********************/
+@media screen and (max-width: 900px) {
+  .destination {
+    display: block;
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    min-height: 1024px;
+    text-align: center;
+  }
+  .dest-left-part {
+    margin-left: 0;
+  }
+  .destination-heading {
+    position: absolute;
+    left: 5%;
+    margin-top: 136px;
+    font-size: 20px;
+  }
+  .dest-image {
+    margin-top: 220px;
+    height: 300px;
+  }
+  .destination-name {
+    font-size: 80px;
+  }
+  .destination-description {
+    font-size: 16px;
+  }
+  .destination-content {
+    width: 75%;
+    margin: 53px auto 0 auto;
+  }
+  .hrule {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+}
+
+/******************* Mobile *********************/
+@media screen and (max-width: 487px) {
+  .destination {
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
+    min-height: 850px;
+    min-width: 270px;
+  }
+  .destination-heading {
+    left: 0;
+    position: relative;
+    margin: 88px auto 0 auto;
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .dest-image {
+    height: 170px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .dest-link-item {
+    font-size: 14px;
+  }
+  .destination-name {
+    font-size: 56px;
+    margin-top: 10px;
+  }
+  .destination-description {
+    font-size: 15px;
+  }
+  .destination-content {
+    margin-top: 20px;
+  }
+  .dest-link {
+    margin-bottom: 0px;
+  }
+  .dest-link-item-active {
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+  .grid-container {
+    display: block;
+  }
+  .grid-item {
+    margin-top: 20px; 
+  }
+}

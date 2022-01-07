@@ -1,0 +1,227 @@
+.technology {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../../assets/technology/background-technology-desktop.jpg");
+  min-height: 900px;
+}
+
+.technology-heading span {
+  word-spacing: 10px;
+}
+
+.technology-content {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: calc(3.97% + 98px);
+}
+
+.technology-details {
+  display: flex;
+  margin-top: 140px;
+}
+
+.tech-name {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  line-height: 60px;
+}
+
+.tech-info {
+  margin-top: 10px;
+  width: 37%;
+}
+
+.technology-nav {
+  margin-right: 5%;
+}
+
+.tech-count {
+  position: absolute;
+  margin-left: 32px;
+  margin-top: 17px;
+}
+
+.technology-nav-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 25px;
+}
+
+@media (hover: hover) {
+  .technology-nav-item:hover {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+}
+
+.technology-nav-item-active {
+  background-color: #ffffff;
+  color: black;
+  opacity: 1;
+}
+
+.tech-image {
+  float: right;
+  margin-top: 270px;
+}
+
+/*************** Media queries *****************/
+
+/****************** Desktop *************************/
+@media screen and (max-width: 1300px) {
+  .technology-content {
+    margin-left: calc(7% + 20px);
+  }
+  .tech-image {
+    margin-top: 340px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .tech-name {
+    width: 37%;
+  }
+  .tech-image {
+    margin-top: 350px;
+  }
+  .technology-details {
+    margin-top: 100px;
+  }
+  .technology-nav {
+    margin-right: 4%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .landscape {
+    display: none;
+  }
+}
+
+/****************** Tablet *************************/
+@media screen and (max-width: 900px) {
+  .technology {
+    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+    min-height: 1024px;
+  }
+  .technology-content {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .technology-heading {
+    margin-left: 5%;
+    margin-top: 136px;
+    font-size: 20px;
+  }
+  .term {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .tech-name {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .tech-info {
+    font-size: 16px;
+  }
+  .technology-nav {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .technology-nav-item {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .tech-count {
+    margin: 0;
+    margin-left: -6px;
+    margin-top: 6px;
+  }
+  .term,
+  .tech-name,
+  .tech-info {
+    width: 100%;
+  }
+  .technology-details {
+    margin: 430px auto 0 auto;
+    width: 70%;
+    display: block;
+    text-align: center;
+  }
+  .tech-image {
+    width: 100%;
+    margin-top: 220px;
+    height: 310px;
+  }
+  .portrait {
+    display: none;
+  }
+  .landscape {
+    display: block;
+  }
+}
+
+/******************* Mobile *********************/
+@media screen and (max-width: 487px) {
+  .technology {
+    background-image: url("../../assets/technology/background-technology-mobile.jpg");
+    min-height: 710px;
+    min-width: 270px;
+  }
+  .technology-heading {
+    text-align: center;
+    margin: 88px auto 0 auto;
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .technology-details {
+    margin-top: 232px;
+    width: 80%;
+  }
+  .term {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .tech-name {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .tech-info {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .tech-image {
+    height: 170px;
+    margin-top: 139px;
+    margin-bottom: 0;
+  }
+  .technology-nav-item {
+    width: 40px;
+    height: 40px;
+  }
+  .tech-count {
+    font-size: 16px;
+    margin-left: -3px;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .technology-details {
+    width: 90%;
+  }
+}

@@ -1,0 +1,227 @@
+.crew {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  min-height: 900px;
+}
+
+.member-details {
+  position: absolute;
+  margin-left: calc(3.97% + 98px);
+  margin-top: 200px;
+}
+
+.crew-heading span {
+  word-spacing: 10px;
+}
+
+.member-role {
+  opacity: 0.5;
+  margin-top: 140px;
+}
+
+.crew-nav {
+  margin: 0;
+  position: absolute;
+  right: inherit;
+  top: 781px;
+  margin-left: calc(3.97% + 98px);
+}
+
+
+.carousel-inner {
+  height: 900px;
+}
+
+.carousel-indicators {
+  width: 135px;
+  justify-content:space-between;
+}
+
+.carousel-indicators [data-bs-target] {
+  opacity: 0.17 ;
+}
+.carousel-indicators .active {
+  opacity: 1 ;
+}
+
+.crew-nav-item {
+  width: 15px !important;
+  height: 15px !important; 
+  border: none !important;
+  margin: 0 !important;
+  border-radius: 50%;
+}
+
+@media (hover: hover) {
+  .crew-nav-item:hover {
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0px 1px 2px #000000;
+    opacity: 0.5;
+    cursor: pointer;
+  }  
+}
+
+
+.member-bio {
+  width: 31%;
+  margin-top: 20px;
+}
+
+.member-image {
+  margin-top: 250px;
+  margin-left: 50%;
+  height: 650px;
+}
+
+.mobile-hr {
+  display: none;
+}
+
+/******************* Media Queries ******************/
+
+
+/****************** Desktop *************************/
+@media screen and (max-width: 1250px) {
+  .member-details, .crew-nav {
+    margin-left: calc(7% + 20px);
+  } 
+  .member-image{
+    margin-top: 300px;
+    height: 500px;
+  }
+  .member-name {
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 60px;
+  }
+  .member-role {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .member-image {
+    height: 470px;
+  }
+  .crew-nav {
+    top: 800px;
+  }
+}
+
+/****************** Tablet *************************/
+@media screen and (max-width: 900px) {
+  .crew {
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    min-height: 1024px;
+  }
+  .crew-heading {
+    position: absolute;
+    left: 5%;
+    font-size: 20px;
+  }
+  .member-details {
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 136px;
+  }
+  .member-name, .member-role, .member-bio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .member-role {
+    margin-top: 84px;
+    font-size: 24px;
+  }
+  .member-name {
+    margin-top: 8px;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .member-bio {
+    margin-top: 16;
+    font-size: 16px;
+    width: 76%;
+  }
+  .member-image {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    height: 532px;
+  }
+  .carousel-inner {
+    margin-left: auto;
+    margin-right: auto;
+    height: 1024px;
+  }
+  .carousel-indicators {
+    margin-left: 0;
+    top: 455px;
+    left: calc(50% - 68px); 
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .member-bio {
+    width: 90%;
+  }
+}
+
+/******************* Mobile *********************/
+@media screen and (max-width: 487px) {
+  .crew {
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+    min-height: 710px;
+    min-width: 270px;
+  }
+  .carousel-inner {
+    height: 710px;
+  }
+  .member-details {
+    margin-top: 0;
+  }
+  .crew-heading {
+    left: 0;
+    position: relative;
+    margin: 88px auto 0 auto;
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .member-bio {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .member-role {
+    font-size: 16px;
+    margin-top: 74px;
+  }
+  .member-name {
+    font-size: 24px;
+  }
+  .member-image {
+    height: 220px;
+    margin-top: 0px;
+    top: 139px;
+  }
+  .mobile-hr {
+    display: block;
+    margin: 247px auto 0 auto;
+    width: 80%;
+  }
+  .carousel-indicators {
+    top: 394px;
+  }
+  .crew-nav-item {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}

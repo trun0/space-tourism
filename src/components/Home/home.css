@@ -1,0 +1,143 @@
+.home {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  padding-bottom: 10%;
+  min-height: 900px;
+}
+
+.home-content {
+  color: white;
+  display: flex;
+}
+
+.intro {
+  width: 31%;
+  margin-top: 351px;
+  margin-left: calc(3.97% + 98px);
+}
+
+.info {
+  color: #d0d6f9;
+}
+
+
+.explore-link {
+  width: 274px;
+  height: 274px;
+  text-decoration: none;
+  margin-top: 460px;
+  margin-left: 25%;
+  padding: 0;  
+}
+
+.explore {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+@media (hover: hover) {
+  .explore:hover {
+    cursor: pointer;
+    outline: rgba(255, 255, 255, 0.1) solid 80px ;
+  }  
+}
+
+.explore-text {
+  position: absolute;
+  margin-top: 113px;
+  margin-left: 62px;
+  font-family: "Bellefair";
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #0b0d17;
+}
+
+/******************* Media Queries ******************/
+
+
+/******************* Desktop *********************/
+@media screen and (max-width: 1239px) {
+  .intro {
+    margin-left: calc(7% + 20px);
+    margin-top: 300px;
+  }
+}
+
+/******************* Tablet *********************/
+@media (hover: hover) and (max-width: 900px) {
+  .explore:hover {
+    cursor: pointer;
+    outline: rgba(255, 255, 255, 0.1) solid 50px ;
+  }  
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+    min-height: 1024px;
+  }
+  .home-content {
+    display: block;
+    text-align: center;
+  }
+  .intro {
+    width: 100%;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-text {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 58.6%;
+  }
+  .explore {
+    margin: 90px auto 0 auto;
+  }
+  .explore-text {
+    margin: 113px auto 0 auto;
+    left: calc(50% - 67px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home-text {
+    width: 80%;
+  }
+} 
+
+/******************* Mobile *********************/
+@media screen and (max-width: 487px) {
+  .home {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+    min-height: 700px;
+    min-width: 270px;
+  }
+  .intro {
+    margin-top: 112px;
+  }
+  .home-name {
+    font-size: 80px;
+  }
+  .home-text {
+    font-size: 15px;
+  }
+  .info {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .explore {
+    width: 150px;
+    height: 150px;
+  }
+  .explore-text {
+    font-size: 20px;
+    margin-top: 60px;
+    left: calc(50% - 46px);
+  }
+}
