@@ -38,9 +38,10 @@
   height: 274px;
   border-radius: 50%;
   background-color: #ffffff;
+  transition: outline 0.5s;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .explore:hover {
     cursor: pointer;
     outline: rgba(255, 255, 255, 0.1) solid 80px ;
@@ -69,10 +70,10 @@
 }
 
 /******************* Tablet *********************/
-@media (hover: hover) and (max-width: 900px) {
+@media (hover: hover) and (max-width: 900px) and (pointer: fine) {
   .explore:hover {
     cursor: pointer;
-    outline: rgba(255, 255, 255, 0.1) solid 50px ;
+    outline: rgba(255, 255, 255, 0.1) solid 45px ;
   }  
 }
 

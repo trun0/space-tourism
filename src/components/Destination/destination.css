@@ -48,7 +48,7 @@
   color: #FFFFFF;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .dest-link-item:hover {
     color: #D0D6F9;
     text-decoration: underline;

@@ -56,7 +56,7 @@
   margin-bottom: 25px;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .technology-nav-item:hover {
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 1);

@@ -21,7 +21,7 @@ function Navigation() {
 
     return (
         <div className="navigation">
-            <img className="ninja-star" src={logo} alt="logo" />
+           <Link to="/"><img className="ninja-star" src={logo} alt="logo" /></Link>
             <hr className="rect"></hr>
             <nav className="nav-box">
                 <Link to="/" className="nav-text nav-item"><strong><span>00</span></strong> HOME</Link>

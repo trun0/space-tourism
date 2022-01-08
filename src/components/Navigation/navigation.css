@@ -50,7 +50,7 @@
   color: #ffffff;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .nav-item:hover {
     color: #ffffff;
     opacity: 0.5;
@@ -76,6 +76,10 @@
 .icon-hamburger,
 .icon-close {
   display: none;
+}
+.icon-hamburger:hover,
+.icon-close:hover {
+  cursor: pointer;
 }
 
 /*************** Media queries ********************/
@@ -135,11 +139,9 @@
   }
   .nav-box {
     display: none;
-    width: 0px;
     padding-top: 90px;
     margin-left: 15%;
     height: 100vmax;
-    transition: width 2s ease-in;
   }
   .nav-box span {
     display: inline-flex;
@@ -160,6 +162,5 @@
   }
   .display-nav-box {
     display: block;
-    width: 100%;
   }
 }
